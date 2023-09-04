@@ -3,10 +3,10 @@ public class CarroAluguel {
     private float distanciaPercorrida;
     private String estadoDoCarro;
 
-    public CarroAluguel(float valorPorKm, float distanciaPercorrida, String estadoDoCarro) {
+    public CarroAluguel(float valorPorKm/* , float distanciaPercorrida, String estadoDoCarro */) {
         this.valorPorKm = valorPorKm;
-        this.distanciaPercorrida = distanciaPercorrida;
-        this.estadoDoCarro = estadoDoCarro;
+        /* this.distanciaPercorrida = distanciaPercorrida;
+        this.estadoDoCarro = estadoDoCarro; */
     }
 
     public void setValorPorKm(float valorPorKm) {
@@ -25,5 +25,7 @@ public class CarroAluguel {
         return distanciaPercorrida;
     }
 
-
+    public void alugar() {
+        
+    }
 }
