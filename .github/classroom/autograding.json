@@ -1,0 +1,214 @@
+{
+  "tests": [
+    {
+      "name": "CarroAluguelTest.testeCriacao",
+      "setup": "",
+      "run": "gradle test --tests CarroAluguelTest.testeCriacao",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "CarroAluguelTest.testeAluguel",
+      "setup": "",
+      "run": "gradle test --tests CarroAluguelTest.testeAluguel",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "CarroAluguelTest.testeDevolucao",
+      "setup": "",
+      "run": "gradle test --tests CarroAluguelTest.testeDevolucao",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "CarroAluguelTest.testePagar",
+      "setup": "",
+      "run": "gradle test --tests CarroAluguelTest.testePagar",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "CarroAluguelTest.testeSetDistancia",
+      "setup": "",
+      "run": "gradle test --tests CarroAluguelTest.testeSetDistancia",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "CirculoTest.testRaio",
+      "setup": "",
+      "run": "gradle test --tests CirculoTest.testRaio",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "CirculoTest.testArea",
+      "setup": "",
+      "run": "gradle test --tests CirculoTest.testArea",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "CirculoTest.testCircunferencia",
+      "setup": "",
+      "run": "gradle test --tests CirculoTest.testCircunferencia",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "EstudanteTest.testNome",
+      "setup": "",
+      "run": "gradle test --tests EstudanteTest.testNome",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "EstudanteTest.testMatricula",
+      "setup": "",
+      "run": "gradle test --tests EstudanteTest.testMatricula",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "FuncionarioTest.testNome",
+      "setup": "",
+      "run": "gradle test --tests FuncionarioTest.testNome",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "FuncionarioTest.testSobrenome",
+      "setup": "",
+      "run": "gradle test --tests FuncionarioTest.testSobrenome",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 4
+    },
+    {
+      "name": "FuncionarioTest.testSalario",
+      "setup": "",
+      "run": "gradle test --tests FuncionarioTest.testSalario",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 4
+    },
+    {
+      "name": "FuncionarioTest.testAumento",
+      "setup": "",
+      "run": "gradle test --tests FuncionarioTest.testAumento",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 4
+    },
+    {
+      "name": "PontoLinhaTest.testPonto",
+      "setup": "",
+      "run": "gradle test --tests PontoLinhaTest.testPonto",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "PontoLinhaTest.testLinha",
+      "setup": "",
+      "run": "gradle test --tests PontoLinhaTest.testLinha",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "PontoLinhaTest.testComprimento",
+      "setup": "",
+      "run": "gradle test --tests PontoLinhaTest.testComprimento",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "RelogioDigitalTest.testCriacao",
+      "setup": "",
+      "run": "gradle test --tests RelogioDigitalTest.testCriacao",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "RelogioDigitalTest.testTickSimples",
+      "setup": "",
+      "run": "gradle test --tests RelogioDigitalTest.testTickSimples",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "RelogioDigitalTest.testTickViraHora",
+      "setup": "",
+      "run": "gradle test --tests RelogioDigitalTest.testTickViraHora",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "RelogioDigitalTest.testTickViraDia",
+      "setup": "",
+      "run": "gradle test --tests RelogioDigitalTest.testTickViraDia",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    }
+  ]
+}
