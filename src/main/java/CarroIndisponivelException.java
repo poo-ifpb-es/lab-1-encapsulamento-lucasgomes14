@@ -1,4 +1,4 @@
-public class CarroIndisponivelException extends RuntimeException{
+public class CarroIndisponivelException extends Exception {
 
     public CarroIndisponivelException(String msg) {
         super(msg);

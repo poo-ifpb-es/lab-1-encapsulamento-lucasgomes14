@@ -1,12 +1,14 @@
 public class CarroAluguel {
     private float valorPorKm;
     private float distanciaPercorrida;
-    private boolean sinistro = false;
+    private boolean sinistro;
     private boolean disponibilidade;
-    private float debito;
 
     public CarroAluguel(float valorPorKm) {
         this.valorPorKm = valorPorKm;
+        distanciaPercorrida = 0;
+        sinistro = false;
+        disponibilidade = true;
     }
 
     public void setValorPorKm(float valorPorKm) {
@@ -25,7 +27,7 @@ public class CarroAluguel {
         return distanciaPercorrida;
     }
 
-    public void alugar() {
+    public void alugar() throws CarroIndisponivelException {
         if(disponibilidade) 
             disponibilidade = false;
         
@@ -33,15 +35,17 @@ public class CarroAluguel {
             throw new CarroIndisponivelException("O carro está indisponível.");  
     }
         
-    public void devolver() {
-        if(!disponibilidade) 
-        disponibilidade = true;
-        
-        else
+    public void devolver() throws CarroDisponivelException, CarroNaoPagoException {
+        if(disponibilidade) 
             throw new CarroDisponivelException("O carro está disponível.");
         
-        if(debito > 0) 
+
+        if(getDebito() > 0) 
             throw new CarroNaoPagoException("O carro não foi pago.");
+
+        disponibilidade = true;
+        sinistro = false;
+        distanciaPercorrida = 0;
     }
 
     public boolean isDisponivel() {
@@ -49,8 +53,7 @@ public class CarroAluguel {
     }
 
     public boolean hasSinistro() {
-        if(sinistro) return true;
-        return false;
+        return sinistro;
     }
 
     public void setSinistro(boolean sinistro) {
@@ -59,13 +62,19 @@ public class CarroAluguel {
 
     public float getDebito() {
         float valorASerPago = getValorPorKm() * getDistanciaPercorrida();
-        if(sinistro == true) return (float) (valorASerPago * 1.6);
+
+        if(sinistro) {
+            sinistro = false;
+            return (float) (valorASerPago * 1.6);
+        }
+
         return valorASerPago;
     }
 
-    public void pagar() {
+    public void pagar() throws CarroDisponivelException {
         if(isDisponivel())
             throw new CarroDisponivelException("O carro está disponível.");
-        debito = 0;
+
+        distanciaPercorrida = 0;
     }
 }
