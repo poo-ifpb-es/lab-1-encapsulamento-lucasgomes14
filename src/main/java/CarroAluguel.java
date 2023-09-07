@@ -28,7 +28,7 @@ public class CarroAluguel {
     }
 
     public void alugar() throws CarroIndisponivelException {
-        if(disponibilidade) 
+        if(isDisponivel()) 
             disponibilidade = false;
         
         else 
@@ -36,10 +36,9 @@ public class CarroAluguel {
     }
         
     public void devolver() throws CarroDisponivelException, CarroNaoPagoException {
-        if(disponibilidade) 
+        if(isDisponivel()) 
             throw new CarroDisponivelException("O carro está disponível.");
         
-
         if(getDebito() > 0) 
             throw new CarroNaoPagoException("O carro não foi pago.");
 
@@ -63,7 +62,7 @@ public class CarroAluguel {
     public float getDebito() {
         float valorASerPago = getValorPorKm() * getDistanciaPercorrida();
 
-        if(sinistro) {
+        if(hasSinistro()) {
             sinistro = false;
             return (float) (valorASerPago * 1.6);
         }
